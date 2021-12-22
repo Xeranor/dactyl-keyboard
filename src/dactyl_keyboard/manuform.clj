@@ -1535,8 +1535,8 @@
         y-middle-last   (+ lastrow var-middle-last)
         x-middle-last   (if is-five? 1.6 2)]
     (union (screw-insert c first-screw-x  0               bottom-radius top-radius height)
-           (screw-insert c second-screw-x (- lastrow 0.8) bottom-radius top-radius height)
-           (screw-insert c x-middle-last  y-middle-last   bottom-radius top-radius height)
+           (screw-insert c (- second-screw-x 0.4) (- lastrow 0.8) bottom-radius top-radius height)
+           (screw-insert c (- x-middle-last 0)  (- y-middle-last 0.1)   bottom-radius top-radius height)
            (screw-insert c 3              0               bottom-radius top-radius height)
            (screw-insert c lastloc        1               bottom-radius top-radius height))))
 
